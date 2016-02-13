@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Jumper",
+  "description": "Easily navigate conversation threads.",
+  "version": "1.0",
+  "permissions": [
+    "tabs",
+    "*://news.ycombinator.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://news.ycombinator.com/*"],
+      "js": ["hn.js"]
+    }
+  ]
+}
