@@ -1,16 +1,22 @@
 # Jumper
 
-An extension to navigate conversation threads more quickly.
+An extension to navigate conversation threads on Hacker News more quickly.
 
 ## Features
 
 * Skip to next or previous root comment thread on http://news.ycombinator.com
 
-## Wishlist
+## How-To
 
-* Skip to next comment thread on reddit.com
-* Easily extensible to new sites
+1. Download the ZIP and extract it somewhere
+2. Go to chrome://extensions in Google Chrome
+3. Check 'Enable developer mode' and click 'Load unpacked extension'
+4. Load the ZIP you just extracted
+5. Use the left and right arrow keys to navigate top-level comments in a hackernews thread
+
+## Wishlist/Todo
+
+* Publish extension in chrome web store
 * Customizable key bindings
-* Navigation among sibling elements under a single parent at arbitrary depth
-* Downloadable from the Chrome web store
+* Allow navigation between subtrees at arbitrary depth
 
