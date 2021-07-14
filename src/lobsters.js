@@ -1,22 +1,25 @@
 console.debug("loaded Jumper for lobste.rs");
-var rootComments = Array.from(document.querySelectorAll(".comments > .comments_subtree"))
+const rootComments = Array.from(
+    document.querySelectorAll("#inside > .comments > .comments_subtree")
+);
 
-var rootCommentsRev = rootComments.slice().reverse();
+
+const rootCommentsRev = rootComments.slice().reverse();
 
 function scrollToNext() {
-    var nextComment = rootComments
+    const nextComment = rootComments
         .find(elem => elem.getBoundingClientRect().top > 1);
     if (nextComment) {
-        var yDiff = nextComment.getBoundingClientRect().top;
+        const yDiff = nextComment.getBoundingClientRect().top;
         window.scrollBy(0, yDiff);
     }
 }
 
 function scrollToPrevious() {
-    var prevComment = rootCommentsRev
+    const prevComment = rootCommentsRev
         .find(elem => elem.getBoundingClientRect().top < -1);
     if (prevComment) {
-        var yDiff = prevComment.getBoundingClientRect().top;
+        const yDiff = prevComment.getBoundingClientRect().top;
         window.scrollBy(0, yDiff);
     }
 }
